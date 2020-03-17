@@ -1,0 +1,76 @@
+{
+	font-family: 'Star Jedi';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Star Jedi Hollow'), url('Starjhol.ttf');
+  src: local('Star Jedi'), url('Starjedi.ttf');
+}
+
+body {
+  font-family: 'Star Jedi Hollow';
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  color: #666;
+  background: #F6F6F6;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  background-image: "";
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 80%;
+  max-height: 200px;
+}
+
+li {
+    font-family: 'Star Jedi';
+	  text-align: left;
+  	font-size: 12px;
+  	color: white;
+}
+
+ul {
+	color: #222121;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+ screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+ screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
