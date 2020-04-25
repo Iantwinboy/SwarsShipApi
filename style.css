@@ -1,76 +1,87 @@
-{
-	font-family: 'Star Jedi';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Star Jedi Hollow'), url('Starjhol.ttf');
-  src: local('Star Jedi'), url('Starjedi.ttf');
-}
-
-body {
-  font-family: 'Star Jedi Hollow';
-	color: white;
-	font-size: 40px;
-	text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Dosis', sans-serif;
-  line-height: 1.6;
-  color: #666;
-  background: #F6F6F6;
+   
+header {
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    font-family: "Star Jedi Hollow'";
 }
 
 h1 {
-  font-size: 30px;
-  text-align: center;
-  padding: 1.5rem 2.5rem;
-  background-image: "";
-  margin: 0 0 2rem 0;
-  font-size: 1.5rem;
-  color: white;
+ margin: 20px;
+ filter: drop-shadow( .2mm .4mm .6mm yellow);
 }
 
-
-img {
-  display: block;
-  margin: 1rem auto;
-  max-width: 80%;
-  max-height: 200px;
+body {
+    font-family: 'Star Jedi Hollow';
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    background-image: url("resources/background.jpg");
+    background-repeat: no-repeat, repeat;
+    background-color: #000000;
+    background-size: cover;
 }
 
-li {
-    font-family: 'Star Jedi';
-	  text-align: left;
-  	font-size: 12px;
-  	color: white;
-}
-
-ul {
-	color: #222121;
+main {
+    min-width: 750px;
+    
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-
-
-
-
- screen and (min-width: 600px) {
-  .card {
-    flex: 1 1 calc(50% - 2rem);
-  }
+.image img {
+    border-radius: 10px;
+    border: solid 6px;  
 }
 
- screen and (min-width: 900px) {
-  .card {
-    flex: 1 1 calc(33% - 2rem);
-  }
+.card {
+    border-radius: 10px;
+    background-color: #101010;
+    color: yellow;
+}
+
+img {
+    margin-top: 12rem;
+    border: solid 4px yellow;
+    font-family: "Star Jedi Hollow'";
+    filter: drop-shadow( .2mm .4mm .6mm yellow);
+}
+
+.view {
+    align-items: center;
+}
+
+.nav {
+    border: solid 4px yellow;
+    padding: 10px 30px 10px 30px;
+    font-family: "Star Jedi Hollow";
+    box-shadow: inset 0px 0px 25px yellow;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+a:link  {
+    background-color: black;
+}
+
+li {
+    list-style-type: none;
+    color: #fafafa;
+    font-variant: small-caps; 
+    font: outline;
+    filter: drop-shadow(.6px .6px 4px #0d0f1b);
+}
+
+errorimg {
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
 }
